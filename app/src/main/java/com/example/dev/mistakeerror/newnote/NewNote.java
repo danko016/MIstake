@@ -23,10 +23,13 @@ public class NewNote extends Activity {
     public EditText editContent;
     private Button saveBTN;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newnote_layout);
+
+
 
         editTitle = (EditText)findViewById(R.id.EDTitle);
         editContent = (EditText) findViewById(R.id.EDContent);
