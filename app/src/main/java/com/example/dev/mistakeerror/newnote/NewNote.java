@@ -29,8 +29,6 @@ public class NewNote extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newnote_layout);
 
-
-
         editTitle = (EditText)findViewById(R.id.EDTitle);
         editContent = (EditText) findViewById(R.id.EDContent);
         saveBTN = (Button) findViewById(R.id.BTNSave);
