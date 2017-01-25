@@ -27,9 +27,7 @@ public class NewNote extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.newnote_layout);
-
-
+        setContentView(R.layout.error_layout);
 
         editTitle = (EditText)findViewById(R.id.EDTitle);
         editContent = (EditText) findViewById(R.id.EDContent);
