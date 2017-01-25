@@ -22,6 +22,7 @@ public class NewNote extends Activity {
     public EditText editTitle;
     public EditText editContent;
     private Button saveBTN;
+    private String string1111;
 
 
     @Override
