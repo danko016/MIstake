@@ -18,6 +18,7 @@ public class NewNote extends Activity {
 
     private DBHelper dbHelper;
     private SQLiteDatabase db;
+    private String getString1111;
 
     public EditText editTitle;
     public EditText editContent;
