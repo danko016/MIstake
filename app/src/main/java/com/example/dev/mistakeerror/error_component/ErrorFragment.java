@@ -96,7 +96,7 @@ public class ErrorFragment extends Fragment {
             titles.add(i.getTitle());
 
         }
-        errorAdapter = new ErrorAdapter(items);
+        errorAdapter = new ErrorAdapter(items, getContext());
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(errorAdapter);
 

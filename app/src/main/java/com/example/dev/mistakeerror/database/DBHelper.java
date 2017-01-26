@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     private Context context;
 
-    private static final int version = 8;
+    private static final int version = 9;
     private static final String DB_NAME = "notesDB"; //database name
     private static final String TABLE_NAME = "errors"; //table name
     private static final String KEY_ID = "id";
@@ -73,5 +73,22 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor c = db.query(TABLE_NAME, new String[]{KEY_TITLE, KEY_CONTENT, KEY_DATE}, KEY_ID + " = ?", new String[]{String.valueOf(id)}, null, null, null);
         c.moveToFirst();
         return c;
+    }
+
+    public void removeNote(int id) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TABLE_NAME, KEY_ID + " = ?", new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+    public void updateNote(String title, String content, Integer id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("title", title);
+        cv.put("content", content);
+        cv.put("date", new Date().toString());
+
+        db.update(TABLE_NAME, cv, KEY_ID + "="  + id, null);
+        db.close();
     }
 }
