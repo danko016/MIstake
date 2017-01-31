@@ -2,28 +2,45 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical">
 
     <TextView
-        android:text="@string/title"
-        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:gravity="center"
+        android:text="@string/title"
+        android:textColor="@color/titles"
+        android:textSize="20sp" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/BTNAddNewNote"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:background="@drawable/add" />
 
-    <Button
-    android:id="@+id/BTNAddNewNote"
-        android:text="@string/addNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/addNote"
+            android:fontFamily="serif"
+            android:layout_centerVertical="true"
+            android:textColor="@color/grayfont"
+            android:layout_toEndOf="@id/BTNAddNewNote"
+            android:layout_toRightOf="@id/BTNAddNewNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
 
+    </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:background="#116166"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
     </android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

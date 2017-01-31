@@ -42,6 +42,26 @@ public class ShowNote extends Activity {
         textEditDate = (TextView) findViewById(R.id.TVEditDate);
         editButton = (Button) findViewById(R.id.BTNEdit);
 
+       getNote();
+
+        editButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openNewNote();
+                Log.d("tag", "open new from edit");
+            }
+        });
+
+    }
+
+    public void openNewNote() {
+        Intent intent = new Intent(this, NewNote.class);
+        intent.putExtra("editMode", true);
+        intent.putExtra("id", id);
+        startActivity(intent);
+    }
+
+    public void getNote(){
         dbHelper = new DBHelper(getApplicationContext());
 
         Intent intent = getIntent();
@@ -60,19 +80,11 @@ public class ShowNote extends Activity {
         textViewEditContent.setText(content);
         textEditDate.setText(date);
 
-        editButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openNewNote();
-                Log.d("tag", "open new from edit");
-            }
-        });
     }
 
-    public void openNewNote() {
-        Intent intent = new Intent(this, NewNote.class);
-        intent.putExtra("editMode", true);
-        intent.putExtra("id", id);
-        startActivity(intent);
+    @Override
+    protected void onResume() {
+        super.onResume();
+        getNote();
     }
 }

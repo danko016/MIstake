@@ -19,6 +19,7 @@ import com.example.dev.mistakeerror.database.DBHelper;
 
 public class NewNote extends Activity {
 
+
     private DBHelper dbHelper;
     private SQLiteDatabase db;
 
@@ -65,7 +66,7 @@ public class NewNote extends Activity {
                 String title = editTitle.getText().toString();
                 String content = editContent.getText().toString();
 
-                //update if editmode is true, sent from ShowNote.class, else just add new note
+                //update if editmode is true, sent from ShowNote.class - update, else just add new note
                 if (editMode) {
                     Log.d("tag", "editMode entered");
                     dbHelper.updateNote(title, content, id);
@@ -80,8 +81,6 @@ public class NewNote extends Activity {
 
             }
         });
-
-
     }
 
     @Override

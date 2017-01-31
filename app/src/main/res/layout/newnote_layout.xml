@@ -2,32 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="@string/addNote"
+        android:textColor="@color/titles"
+        android:textSize="18sp" />
 
     <TextView
-        android:text="Note title:"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/noteTitle"
+        android:textColor="@color/grayfont" />
 
     <EditText
         android:id="@+id/EDTitle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/grayfont" />
 
     <TextView
-        android:text="Content:"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/content"
+        android:textColor="@color/grayfont" />
 
     <EditText
         android:id="@+id/EDContent"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="@color/grayfont" />
 
     <Button
         android:id="@+id/BTNSave"
-        android:text="Save Note"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:fontFamily="serif"
+        android:text="@string/save" />
 </LinearLayout>

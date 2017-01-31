@@ -17,7 +17,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
     private Context context;
 
-    private static final int version = 9;
+    private static final int version = 10;
     private static final String DB_NAME = "notesDB"; //database name
     private static final String TABLE_NAME = "errors"; //table name
     private static final String KEY_ID = "id";

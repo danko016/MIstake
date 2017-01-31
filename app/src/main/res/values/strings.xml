@@ -1,8 +1,12 @@
 <resources>
     <string name="app_name">MistakeError</string>
-    <string name="enterButton">Enter to your mistake</string>
+    <string name="enterButton">L(a)unch your mistake</string>
 
     <!--error fragment-->
     <string name="title">My Errors</string>
     <string name="addNote">Add note</string>
+    <string name="save">Save note</string>
+    <string name="noteTitle">Note title:</string>
+    <string name="content">Content:</string>
+
 </resources>
