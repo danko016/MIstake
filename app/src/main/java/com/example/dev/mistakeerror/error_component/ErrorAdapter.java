@@ -32,6 +32,7 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
     private String get33;
     private int anInt;
     private int getAnInt;
+    private int inf;
 
 
     ErrorAdapter(ArrayList<Item> items, Context context) {
