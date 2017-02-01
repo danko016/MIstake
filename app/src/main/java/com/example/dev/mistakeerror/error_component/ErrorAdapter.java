@@ -12,7 +12,8 @@ import android.widget.TextView;
 
 import com.example.dev.mistakeerror.R;
 import com.example.dev.mistakeerror.database.DBHelper;
-import com.example.dev.mistakeerror.editnote.ShowNote;
+import com.example.dev.mistakeerror.database.Item;
+import com.example.dev.mistakeerror.shownote.ShowNote;
 
 import java.util.ArrayList;
 

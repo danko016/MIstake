@@ -1,4 +1,4 @@
-package com.example.dev.mistakeerror.editnote;
+package com.example.dev.mistakeerror.shownote;
 
 import android.app.Activity;
 import android.content.Intent;
