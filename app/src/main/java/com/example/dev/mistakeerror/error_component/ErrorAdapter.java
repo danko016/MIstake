@@ -34,6 +34,7 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
 
     private String ededed;
     private String ededed2;
+    private String heheheheh;
 
 
     ErrorAdapter(ArrayList<Item> items, Context context) {
