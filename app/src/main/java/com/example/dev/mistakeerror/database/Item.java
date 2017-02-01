@@ -13,6 +13,7 @@ public class Item {
         this.id = id;
         this.title = title;
         this.date = date;
+
     }
 
     public int getId(){
