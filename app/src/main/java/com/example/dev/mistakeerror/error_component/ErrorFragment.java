@@ -17,6 +17,7 @@ import android.widget.Button;
 
 import com.example.dev.mistakeerror.R;
 import com.example.dev.mistakeerror.database.DBHelper;
+import com.example.dev.mistakeerror.database.Item;
 import com.example.dev.mistakeerror.newnote.NewNote;
 
 import java.util.ArrayList;
