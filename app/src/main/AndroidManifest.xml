@@ -17,7 +17,7 @@
         </activity>
         <activity android:name=".StartActivity"/>
         <activity android:name=".newnote.NewNote"/>
-        <activity android:name=".editnote.ShowNote"/>
+        <activity android:name=".shownote.ShowNote"/>
     </application>
 
 </manifest>

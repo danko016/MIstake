@@ -1,4 +1,4 @@
-package com.example.dev.mistakeerror.error_component;
+package com.example.dev.mistakeerror.database;
 
 /**
  * Created by dev on 23.01.17..
