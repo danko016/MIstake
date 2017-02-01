@@ -32,6 +32,8 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
     private  int getAnInt45;
     private  boolean aBoolean;
 
+    private String ededed;
+
 
     ErrorAdapter(ArrayList<Item> items, Context context) {
         this.items = items;
