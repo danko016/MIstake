@@ -35,18 +35,43 @@
         android:text="@string/content"
         android:textColor="@color/grayfont" />
 
-    <EditText
-        android:id="@+id/EDContent"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="serif"
-        android:textColor="@color/grayfont" />
+        android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/BTNSave"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:fontFamily="serif"
-        android:text="@string/save" />
+        <RelativeLayout
+            android:id="@+id/RLOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222364">
+
+            <Button
+                android:id="@+id/BTNCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Camera" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/BTNSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/titles"
+            android:fontFamily="serif"
+            android:text="@string/save" />
+
+        <EditText
+            android:id="@+id/EDContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/BTNSave"
+            android:layout_below="@id/RLOptions"
+            android:fontFamily="serif"
+            android:gravity="start"
+            android:textAlignment="textStart"
+            android:textColor="@color/grayfont" />
+    </RelativeLayout>
+
+
 </LinearLayout>

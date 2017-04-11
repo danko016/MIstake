@@ -9,4 +9,17 @@
     <string name="noteTitle">Note title:</string>
     <string name="content">Content:</string>
 
+    <string name="details">Mistake details</string>
+    <string name="edit">Edit</string>
+    <string name="dateText">Modified:</string>
+    <string name="noteSaved">Note successfully saved</string>
+
+    <string name="editNote">Edit note</string>
+    <!--dialog title-->
+    <string name="dialogTitle">Delete note</string>
+    <string name="dialogMessage">Are you sure you want to delete this note?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="deleted">Note deleted successfully</string>
+
 </resources>

@@ -7,8 +7,10 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.dev.mistakeerror.R;
 import com.example.dev.mistakeerror.database.DBHelper;
@@ -75,7 +77,10 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
                 @Override
                 public void onClick(View v) {
                     Log.d("tag", "removenote click");
-                    removeNote();
+                    ErrorDialog errorDialog = new ErrorDialog(context, ErrorAdapter.MyViewHolder.this);
+                    errorDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+                    errorDialog.show();
+//                    removeNote();
 
                 }
             });
@@ -85,6 +90,7 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
             dbHelper.removeNote(items.get(getAdapterPosition()).getId());
             items.remove(getAdapterPosition());
             notifyDataSetChanged();
+            Toast.makeText(context, R.string.deleted, Toast.LENGTH_SHORT).show();
         }
 
 
@@ -95,6 +101,10 @@ public class ErrorAdapter extends RecyclerView.Adapter<ErrorAdapter.MyViewHolder
             intent.putExtra("title", titleTextView.getText().toString());
             intent.putExtra("date", dateText.getText());
             context.startActivity(intent);
+        }
+
+        public void test(){
+            Log.d("tag", "test working");
         }
 
         @Override

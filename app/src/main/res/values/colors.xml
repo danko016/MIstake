@@ -7,6 +7,7 @@
     <color name="grayfont">#847f7f</color>
     <color name="titles">#72eaea</color>
     <color name="cursor">#72eaea</color>
+    <color name="black2">#202020</color>
 
     <color name="opacityBlue">#f27beaea</color>
 </resources>

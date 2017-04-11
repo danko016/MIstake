@@ -39,6 +39,8 @@ public class ErrorFragment extends Fragment {
 
     private Cursor cursor;
 
+
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -108,4 +110,6 @@ public class ErrorFragment extends Fragment {
         super.onResume();
         setTitles();
     }
+
+
 }

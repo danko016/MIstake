@@ -18,7 +18,7 @@ import com.example.dev.mistakeerror.newnote.NewNote;
  * Created by dev on 25.01.17..
  */
 
-public class ShowNote extends Activity {
+public class    ShowNote extends Activity {
 
     TextView textViewEditTitle;
     TextView textEditDate;
@@ -36,7 +36,7 @@ public class ShowNote extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.editnote_layout);
+        setContentView(R.layout.shownote_layout);
         textViewEditTitle = (TextView) findViewById(R.id.TVEditTitle);
         textViewEditContent = (TextView) findViewById(R.id.TVEditContent);
         textEditDate = (TextView) findViewById(R.id.TVEditDate);

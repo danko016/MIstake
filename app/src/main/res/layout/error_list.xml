@@ -9,8 +9,20 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <Button
+            android:id="@+id/BTNRemove"
+            android:layout_width="40sp"
+            android:layout_height="45sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/trash1" />
+
+        <RelativeLayout
             android:id="@+id/LLTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/BTNRemove"
+            android:layout_toStartOf="@id/BTNRemove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -25,21 +37,16 @@
 
             <TextView
                 android:id="@+id/TV2"
+                android:layout_below="@id/TV1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="serif"
                 android:textColor="@drawable/selector"
                 android:textSize="12sp" />
 
-        </LinearLayout>
+        </RelativeLayout>
 
-        <Button
-            android:id="@+id/BTNRemove"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/del_note" />
+
     </RelativeLayout>
 
     <View

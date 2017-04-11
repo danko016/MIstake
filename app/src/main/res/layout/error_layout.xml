@@ -16,22 +16,26 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
         <Button
             android:id="@+id/BTNAddNewNote"
-            android:layout_width="50sp"
-            android:layout_height="50sp"
-            android:background="@drawable/add" />
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/action_add" />
 
         <TextView
-            android:text="@string/addNote"
-            android:fontFamily="serif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:textColor="@color/grayfont"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
             android:layout_toEndOf="@id/BTNAddNewNote"
             android:layout_toRightOf="@id/BTNAddNewNote"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:fontFamily="serif"
+            android:text="@string/addNote"
+            android:textColor="@color/grayfont" />
 
     </RelativeLayout>
 
@@ -39,6 +43,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:background="@color/black">
 
     </android.support.v7.widget.RecyclerView>
